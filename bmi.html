@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+    <title>bmi</title>
+    <link rel="stylesheet" href="bmi.css">
+</head>
+<body>
+    <div class="section" >
+    <div class="column is-half is-offset-one-quarter" >
+    <div class="card ">
+        <div class="card-content ">
+          <p class="title is-title-1">
+            BMI Calculator
+          </p>
+          <p class="subtitle">
+            Normal BMI is between 19 and 25
+          </p>
+          <div class="columns is-flex-direction-row is-justify-content-center">
+            <form>
+            <div class="column is-full">
+                <label for="weight" class="label is-large">Enter your weight</label>
+                <input type="number" id="weight" name="weight" placeholder=" Weight(kg) " class="input is-large" step="0.01" required></div>
+            <div class="column is-full">
+                <label for="height " class="label is-large">Enter your height</label>
+            <input type="number" id="height" name="height" placeholder="  Height(cm)  " step="0.01" class="input is-large" required>
+            </div>
+            <div class="column is-12 is-offset">
+                <label for="value" class="label is-large">BMI Value:</label>
+                <input  id="value" class="input is-large" placeholder="BMI VALUE">
+            </div>
+          </div>            
+        </div>
+        <footer class="card-footer ">
+            <button class="button is-info card-footer-item is-large" id="bmi">Check bmi</button>
+            <button id="reset" class="button is-danger card-footer-item is-large">Reset</button>
+        </footer>
+    </form>
+      </div>
+</div>
+</div>    
+    <script src="bmi.js"> </script>
+</body>
+</html>
